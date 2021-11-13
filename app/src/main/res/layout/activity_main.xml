@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<LinearLayout
+    android:id="@+id/toplay"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.35"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Delay in ms" />
+
+        <EditText
+            android:id="@+id/delay_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="2"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="right"
+            android:inputType="number"
+            android:lines="1"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:lines="1"
+            android:text="Number of Times" />
+
+        <EditText
+            android:id="@+id/number_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="2"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="right"
+            android:inputType="number"
+            android:lines="1"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/message_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="left|top"
+            android:lines="4"
+            android:minHeight="30dp"
+            android:padding="5dp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <Button
+                android:id="@+id/send_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:text="SEND" />
+
+            <Button
+                android:id="@+id/stop_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/send_bt"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:text="STOP" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<com.blutermdemo1.EmulatorView
+    android:id="@+id/emulatorView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_margin="5dp"
+    android:layout_weight="0.6"
+    android:textColor="@android:color/white"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="bottom"
+    android:padding="5dp"
+    android:layout_alignParentLeft="true"
+    android:scrollbars="vertical" />
+
+
+</LinearLayout>
